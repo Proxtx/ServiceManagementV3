@@ -41,6 +41,12 @@
       "template": "/components/input-text/index.html",
       "component": "/components/input-text/main.js",
       "styles": ["/main.css", "/components/input-text/style.css"]
+    },
+    "input-bool": {
+      "name": "input-bool",
+      "template": "/components/input-bool/index.html",
+      "component": "/components/input-bool/main.js",
+      "styles": ["/main.css", "/components/input-bool/style.css"]
     }
   }
 }
