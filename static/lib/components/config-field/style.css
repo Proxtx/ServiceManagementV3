@@ -1,0 +1,14 @@
+#wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#inputWrap {
+  width: 70%;
+  background-color: var(--backgroundColor);
+  border-radius: var(--borderRadius);
+  overflow: hidden;
+  position: relative;
+}

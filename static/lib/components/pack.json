@@ -1,0 +1,46 @@
+{
+  "components": {
+    "top-bar": {
+      "name": "s-top-bar",
+      "template": "/components/top-bar/index.html",
+      "component": "/components/top-bar/main.js",
+      "styles": ["/main.css", "/components/top-bar/style.css"]
+    },
+    "divider": {
+      "name": "s-divider",
+      "template": "/components/divider/index.html",
+      "component": "/components/divider/main.js",
+      "styles": ["/main.css", "/components/divider/style.css"]
+    },
+    "bottom-bar": {
+      "name": "s-bottom-bar",
+      "template": "/components/bottom-bar/index.html",
+      "component": "/components/bottom-bar/main.js",
+      "styles": ["/main.css", "/components/bottom-bar/style.css"]
+    },
+    "overview-service": {
+      "name": "s-overview-service",
+      "template": "/components/overview-service/index.html",
+      "component": "/components/overview-service/main.js",
+      "styles": ["/main.css", "/components/overview-service/style.css"]
+    },
+    "component-config": {
+      "name": "s-component-config",
+      "template": "/components/component-config/index.html",
+      "component": "/components/component-config/main.js",
+      "styles": ["/main.css", "/components/component-config/style.css"]
+    },
+    "config-field": {
+      "name": "s-config-field",
+      "template": "/components/config-field/index.html",
+      "component": "/components/config-field/main.js",
+      "styles": ["/main.css", "/components/config-field/style.css"]
+    },
+    "input-text": {
+      "name": "input-text",
+      "template": "/components/input-text/index.html",
+      "component": "/components/input-text/main.js",
+      "styles": ["/main.css", "/components/input-text/style.css"]
+    }
+  }
+}

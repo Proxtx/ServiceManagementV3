@@ -1,0 +1,9 @@
+#wrap {
+  background-color: var(--boxColor);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--contentSpacing);
+  align-items: center;
+  box-sizing: border-box;
+}

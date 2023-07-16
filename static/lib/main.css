@@ -1,0 +1,48 @@
+@font-face {
+  font-family: Mono;
+  src: url("/lib/fonts/RobotoMono.ttf");
+}
+
+@font-face {
+  font-family: JosefinSans;
+  src: url("/lib/fonts/JosefinSans.ttf");
+}
+
+m-overwrite-container,
+:host,
+:root {
+  --contentSpacing: 9px;
+  --largeContentSpacing: 23px;
+  --borderRadius: 4px;
+  --fontFamily: JosefinSans;
+  --accentColor: #6b7fd7;
+  --red: #e84855;
+  --green: #619b8a;
+  --boxColor: #0a0908;
+  --backgroundColor: #22333b;
+  --lightColor: #ffffff;
+  --darkenedLightColor: #c2bfbf;
+}
+
+body {
+  font-family: var(--fontFamily);
+  background-color: var(--backgroundColor);
+  color: var(--lightColor);
+  margin: 0;
+}
+
+.listContent {
+  padding: var(--largeContentSpacing);
+  gap: var(--largeContentSpacing);
+  box-sizing: border-box;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+}
+
+s-bottom-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+}

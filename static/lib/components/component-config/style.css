@@ -1,0 +1,8 @@
+#wrap {
+  background-color: var(--boxColor);
+  padding: var(--contentSpacing);
+  display: flex;
+  flex-direction: column;
+  gap: var(--contentSpacing);
+  border-radius: var(--borderRadius);
+}

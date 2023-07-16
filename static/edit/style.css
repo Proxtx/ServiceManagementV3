@@ -1,0 +1,15 @@
+#delete {
+  --varCascading: 0;
+  --contentSpacing: 9px;
+  --borderRadius: 4px;
+  --fontFamily: JosefinSans;
+  --accentColor: #e84855;
+}
+
+#save {
+  --varCascading: 0;
+  --contentSpacing: 9px;
+  --borderRadius: 4px;
+  --fontFamily: JosefinSans;
+  --accentColor: #6b7fd7;
+}

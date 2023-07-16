@@ -1,0 +1,9 @@
+#wrap {
+  background-color: var(--boxColor);
+  padding: var(--contentSpacing);
+  border-radius: var(--borderRadius);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

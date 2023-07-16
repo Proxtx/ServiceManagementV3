@@ -1,0 +1,9 @@
+#top-block {
+  background-color: var(--boxColor);
+  width: 100%;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
+  padding-left: var(--largeContentSpacing);
+  box-sizing: border-box;
+}
