@@ -1,6 +1,10 @@
 import { connect } from "../lib/wsConnectionHandler.js";
 import { config } from "../lib/apiLoader.js";
 
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("/service-worker.js");
+}
+
 const mainContent = document.getElementById("mainContent");
 const create = document.getElementById("create");
 
