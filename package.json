@@ -5,7 +5,7 @@
   "main": "main.js",
   "type": "module",
   "scripts": {
-    "test": "nodemon ."
+    "test": "nodemon . --ignore services.json"
   },
   "repository": {
     "type": "git",

@@ -13,3 +13,16 @@
   --fontFamily: JosefinSans;
   --accentColor: #6b7fd7;
 }
+
+#insertButton {
+  display: none;
+}
+
+#componentSelect {
+  width: 100%;
+  color: var(--lightColor);
+  padding: var(--contentSpacing);
+  border-radius: var(--borderRadius);
+  background-color: var(--boxColor);
+  display: none;
+}

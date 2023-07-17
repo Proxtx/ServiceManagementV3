@@ -25,7 +25,7 @@ export class Service {
 
   constructor(config) {
     this.config = config;
-    this.setupComponents();
+    this.initPromise = this.setupComponents();
   }
 
   async setupComponents() {

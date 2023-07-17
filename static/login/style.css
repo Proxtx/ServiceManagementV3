@@ -1,0 +1,6 @@
+#wrap {
+  width: 100%;
+  border-radius: var(--borderRadius);
+  padding: var(--contentSpacing);
+  background-color: var(--boxColor);
+}

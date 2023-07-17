@@ -1,11 +1,20 @@
 import { connect } from "../lib/wsConnectionHandler.js";
 import { registerDynamicComponent } from "../lib/gui.js";
+import * as _ from "../lib/apiLoader.js";
 
 let u = new URL(location.href);
 const service = u.searchParams.get("service");
 
 const mainContent = document.getElementById("mainContent");
 const title = document.getElementById("title");
+const editButton = document.getElementById("editButton");
+
+editButton.addEventListener("click", () => {
+  let u = new URL(location.href);
+  u.searchParams.set("service", service);
+  u.pathname = "/edit/";
+  window.location = u;
+});
 
 title.innerText = service;
 

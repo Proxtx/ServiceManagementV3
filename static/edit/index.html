@@ -7,10 +7,11 @@
   </head>
   <body>
     <m-overwrite-container>
-      <s-top-bar>ServiceManagement</s-top-bar>
+      <s-top-bar id="title"></s-top-bar>
       <div id="mainContent" class="listContent">
-        <s-component-config></s-component-config>
-        <m-button stretch="true">NEW</m-button>
+        <m-button stretch="true" id="newButton">NEW</m-button>
+        <select id="componentSelect"></select>
+        <m-button id="insertButton" stretch="true">Insert</m-button>
       </div>
       <s-bottom-bar>
         <a slot="descriptor">Done editing</a>

@@ -1,6 +1,16 @@
 import { connect } from "../lib/wsConnectionHandler.js";
+import { config } from "../lib/apiLoader.js";
 
 const mainContent = document.getElementById("mainContent");
+const create = document.getElementById("create");
+
+create.addEventListener("click", async () => {
+  let name = await config.createService(cookie.pwd);
+  let u = new URL(location.href);
+  u.searchParams.set("service", name);
+  u.pathname = "/edit/";
+  window.location = u;
+});
 
 let widgetLookup = {};
 
