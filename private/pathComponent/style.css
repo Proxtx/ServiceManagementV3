@@ -1,0 +1,17 @@
+#wrap {
+  width: 100%;
+  background-color: var(--boxColor);
+  border-radius: var(--borderRadius);
+  padding: var(--contentSpacing);
+  box-sizing: border-box;
+}
+
+#innerWrap {
+  width: 100%;
+  border-radius: var(--borderRadius);
+  background-color: var(--backgroundColor);
+  color: var(--darkenedLightColor);
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: var(--contentSpacing);
+}

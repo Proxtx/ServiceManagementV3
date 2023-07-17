@@ -131,3 +131,5 @@ dist
 
 
 config.json
+services.json
+components/*
