@@ -28,6 +28,8 @@ export const saveConfig = async (pwd, service, config) => {
   if (!auth(pwd)) return;
   for (let serviceIndex in services)
     if (services[serviceIndex].config.name == service) {
+      for (let component of services[serviceIndex].components)
+        component.import.unload && component.import.unload();
       let s = new Service(config);
       services[serviceIndex] = s;
       await s.initPromise;
