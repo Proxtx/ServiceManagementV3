@@ -30,8 +30,8 @@ framework.ws.addModule(
         await uiBuilder.ready(os);
         os.component.setWidgetData(service);
         widgetLookup[service[0].data] = os;
-        return { success: true };
       }
+      return { success: true };
     },
     updateSpecific: async (data) => {
       widgetLookup[data[0].data].component.setWidgetData(data);
