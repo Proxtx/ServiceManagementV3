@@ -17,7 +17,7 @@ export class Component {
     this.configInput = configInput;
     await uiBuilder.ready(configInput);
     if (value || config.value)
-      configInput.component.setValue(value ? value : config.value);
+      configInput.component.setValue(typeof value != "undefined" ? value : config.value);
   }
 
   async getConfig() {
