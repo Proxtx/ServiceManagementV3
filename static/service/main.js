@@ -44,6 +44,7 @@ framework.ws.addModule(
     },
     updateSpecific: async (name, data) => {
       widgetLookup[name].component.setData(data);
+      return { success: true };
     },
   },
   "service"

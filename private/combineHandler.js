@@ -40,7 +40,7 @@ export const emit = async (type, method, ...args) => {
   try {
     for (let combineIndex in combines[type]) {
       let result = await combines[type][combineIndex][method](...args);
-      if (!result || !result.success) delete combines[combineIndex];
+      if (!result || !result.success) delete combines[type][combineIndex];
     }
   } catch (e) {
     console.log("Combine emit error.", e);
