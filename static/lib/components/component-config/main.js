@@ -19,8 +19,10 @@ export class Component {
       field.component.setConfig(configData, config.config[configData.name]);
     }
     if (!config.fixed) {
+      let div = document.createElement("div");
       let btn = document.createElement("m-button");
-      this.wrap.appendChild(btn);
+      div.appendChild(btn);
+      this.wrap.appendChild(div);
       btn.innerText = "delete";
       await uiBuilder.ready(btn);
       let red = btn.component.component.style.red;

@@ -4,3 +4,9 @@
   padding: var(--contentSpacing);
   background-color: var(--boxColor);
 }
+
+#inputOverwrite {
+  --backgroundColor: #0a0908 !important;
+  --grey: var(--lightColor) !important;
+  --greyText: var(--lightColor) !important;
+}
