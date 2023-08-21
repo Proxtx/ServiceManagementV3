@@ -20,13 +20,18 @@ title.innerText = service;
 
 let widgetLookup = {};
 
+let updating = false;
+
 framework.ws.addModule(
   {
     pwd: cookie.pwd,
     service,
     update: async (data) => {
+      if (updating) location.reload();
+      updating = true;
       mainContent.innerHTML = "";
       widgetLookup = {};
+
       for (let widget of data) {
         await registerDynamicComponent(
           widget.name,
@@ -40,6 +45,8 @@ framework.ws.addModule(
         cmp.component.setData && cmp.component.setData(widget.data);
         widgetLookup[widget.name] = cmp;
       }
+
+      updating = false;
       return { success: true };
     },
     updateSpecific: async (name, data) => {
