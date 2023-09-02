@@ -26,3 +26,8 @@
   background-color: var(--boxColor);
   display: none;
 }
+
+#mainContent {
+  height: 100%;
+  overflow: hidden;
+}
