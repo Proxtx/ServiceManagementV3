@@ -29,5 +29,5 @@
 
 #mainContent {
   height: 100%;
-  overflow: hidden;
+  overflow: auto;
 }
