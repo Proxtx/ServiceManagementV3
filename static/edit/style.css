@@ -31,3 +31,10 @@
   height: 100%;
   overflow: auto;
 }
+
+#editWrap {
+  height: 100%;
+  flex-direction: column-reverse;
+  display: flex;
+  width: 100%;
+}

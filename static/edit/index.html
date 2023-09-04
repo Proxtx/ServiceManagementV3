@@ -7,17 +7,19 @@
   </head>
   <body>
     <m-overwrite-container>
-      <s-top-bar id="title"></s-top-bar>
-      <div id="mainContent" class="listContent">
-        <m-button stretch="true" id="newButton">NEW</m-button>
-        <select id="componentSelect"></select>
-        <m-button id="insertButton" stretch="true">Insert</m-button>
+      <div id="editWrap">
+        <s-top-bar id="title"></s-top-bar>
+        <div id="mainContent" class="listContent">
+          <m-button stretch="true" id="newButton">NEW</m-button>
+          <select id="componentSelect"></select>
+          <m-button id="insertButton" stretch="true">Insert</m-button>
+        </div>
+        <s-bottom-bar>
+          <a slot="descriptor">Done editing</a>
+          <m-button slot="buttons" id="delete">Delete</m-button>
+          <m-button slot="buttons" id="save">Save</m-button>
+        </s-bottom-bar>
       </div>
-      <s-bottom-bar>
-        <a slot="descriptor">Done editing</a>
-        <m-button slot="buttons" id="delete">Delete</m-button>
-        <m-button slot="buttons" id="save">Save</m-button>
-      </s-bottom-bar>
     </m-overwrite-container>
     <script src="private/render/linker.js" class="server"></script>
   </body>
