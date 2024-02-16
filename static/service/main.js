@@ -27,7 +27,10 @@ framework.ws.addModule(
     pwd: cookie.pwd,
     service,
     update: async (data) => {
-      if (updating) location.reload();
+      if (updating) {
+        console.log("too many updates! reloading!!");
+        location.reload();
+      }
       updating = true;
       mainContent.innerHTML = "";
       widgetLookup = {};
